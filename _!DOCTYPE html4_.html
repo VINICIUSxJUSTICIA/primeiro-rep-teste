@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - memShare</title>
+    <style>
+        /* Reset some default styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        /* Style the login container */
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Style the login form */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style the input fields */
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style the login button */
+        .login-form button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the register button */
+        .register-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MemeShare</h1>
+    </header>
+
+
+    <!-- Create the login container -->
+    <div class="login-container">
+        <h1>Sorrir é o objetivo, "Logar" é o caminho:</h1>
+        <!-- Create the login form -->
+        <form class="login-form" action="process_login.php" method="post">
+            <input type="text" name="Nome de Usuário" placeholder="Nome de Usuário" required>
+            <input type="password" name="Senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <!-- Add the Register button below the login form -->
+        <button class="register-button">Não tem conta? Clique em mim!</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MemeShare</title>
+    <style>
+        /* Add your existing styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        /* Style the registration form container */
+        .registration-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style form fields and labels */
+        .registration-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .registration-form input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style the register button */
+        .registration-form {
+            text-align: center; /* Center-align the button horizontally */
+            /* Add any other styles for your form container here */
+        }
+
+        .registration-form button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: inline-block; /* Ensure the button is treated as a block element */
+        }
+
+
+        .header {
+            text-align: center; /* Horizontally center-align the text */
+            padding: 12px 0; /* Add vertical padding for centering vertically */
+        }
+
+        .h1 {
+            font-size: 50px;
+            font-family: 'Arial', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MemeShare</h1>
+    </header>
+
+    <!-- Seção de Registro -->
+    <div class="registration-form">
+        <h2>Crie sua conta e divirta-se:</h2>
+        <form action="register.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Numero de contato:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="Senha" name="Senha" required>
+
+            <label for="password">Digite novamente sua senha:</label>
+            <input type="password" id="Senha" name="Senha" required>
+
+            <button type="submit">Finalizar</button>
+        </form>
+    </div>
+</body>
+</html>
