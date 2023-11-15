@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeShare</title>
+    <style>
+        /* Reset some default styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00f0f0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Style the header */
+        header {
+            background-color: #000000;
+            color: #00f0f0;
+            padding: 0px;
+            text-align: center;
+        }
+
+        /* Reset h1 styles */
+        .h1 {
+            font-size: 25px;
+            font-family: 'Arial', sans-serif;
+            
+        }
+
+        /* Style the menu */
+        .menu {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+            /* Increase the height as needed */
+            height: 100%;
+        }
+
+        /* Style the menu buttons */
+        .menu button {
+            margin: 5px;
+            padding: 5px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the profile image */
+        .profile-image {
+            width: 40px; /* Set a width for the profile image */
+            height: 40px; /* Set a height for the profile image */
+            background-image: url('https://play-lh.googleusercontent.com/cJokjWYV_EhTZJvJG0zbV6CowN5V8EoyjzF4LssGyjhTo6rAVntx3XjD7AkBQ2IdFKw'); /* Add your profile image URL here */
+            background-size: cover; /* Ensure the image covers the div */
+            background-position: center; /* Center the image within the div */
+            border-radius: 50%; /* Make it a circle */
+            margin-right: 10px; /* Add some spacing between the profile image and buttons */
+        }
+
+        /* Style the feed container */
+        .feed {
+            flex: 1000; /* Fill available space */
+            max-width: 750px;
+            margin: 20px auto; /* Adjust margin to center the feed */
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the individual posts */
+        .post {
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Hide any overflowing content */
+        }
+
+        /* Style the post images */
+        .post img {
+            max-width: 100%;
+            height: auto;
+            width: 100%; /* Make the images fill the entire post width */
+            max-height: 1000px; /* Set a maximum height for the images */
+            object-fit: cover; /* Crop and center the images within their containers */
+        }
+
+        /* Add padding for spacing between the image and post content */
+        .post img + * {
+            padding: 10px;
+        }
+
+        /* Style the post content (optional) */
+        .post .post-content {
+            padding: 10px;
+            background-color: #777;
+        }
+
+        /* Style the post metadata (e.g., like, comment, share buttons) */
+        .post .post-metadata {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px;
+            background-color: #ffffff;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Style individual metadata buttons (e.g., like, comment, share) */
+            .post .post-metadata button {
+                margin-bottom: 10px;
+                background-color: #00ffff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden; /* Hide any overflowing content */
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <!-- Create the header section -->
+    <header>
+        <h1>MemeShare</h1>
+    </header>
+    
+    <!-- Create the menu section -->
+    <nav class="menu">
+        <!-- Add the user's profile image here -->
+        <div class="profile-image"></div>
+        <button>Perfil</button>
+        <button>Procurar Página</button>
+        <button>Desconectar</button>
+    </nav>
+    
+    <!-- Create the feed section -->
+    <div class="feed">
+        <!-- Create individual posts -->
+        <div class="post">
+            <!-- Increase the size of the post image -->
+            <h2>Criador 1</h2>
+
+            <div class="post-content">
+                <!-- Add your post content here -->
+
+                <img src="https://pbs.twimg.com/media/D63aUl-XkAIv9gL.png" alt=>
+
+            </div>
+            <div class="post-metadata">
+                <!-- Add like, comment, share buttons here -->
+                <button>Curtir</button>
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+                <button>Doar ao Criador</button>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <h2>Criador 2</h2>
+            <div class="post-content">
+                <!-- Add your post content here -->
+                <img src="https://s2-techtudo.glbimg.com/db8U271F9a5gB0pCVs8GKArb1dY=/0x0:1080x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/P/c/c3LmJ2Q2OVpvYMRxwn7g/tecq.jpg" alt=>
+            </div>
+            <div class="post-metadata">
+                <!-- Add like, comment, share buttons here -->
+                <button>Curtir</button>
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+                <button>Doar ao Criador</button>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <h2>Criador 3</h2>
+            <div class="post-content">
+                <!-- Add your post content here -->
+                <img src="https://1.bp.blogspot.com/-lVo9ZiMhjKg/X1FxqPHwMxI/AAAAAAABWYY/xgnduUY-EBoW-eWqFux5JXg1-InPzUEgACLcBGAsYHQ/s1600/Meme%2BNota%2Bde%2B200%2Breais%2Blobo%2Bguara%2Bcachorro%2Bcaramelo%2Bzeca%2Bpagodinho.PNG" alt=>
+            </div>
+            <div class="post-metadata">
+                <!-- Add like, comment, share buttons here -->
+                <button>Curtir</button>
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+                <button>Doar ao Criador</button>
+            </div>
+        </div>
+        <div class="post">
+            <h2>Criador 4</h2>
+            <div class="post-content">
+                <!-- Add your post content here -->
+                <img src="https://t.ctcdn.com.br/EPYGStiMMYjd-W0Y7C5nDpwDVWk=/640x360/smart/i598772.jpeg" alt=>
+            </div>
+            <div class="post-metadata">
+                <!-- Add like, comment, share buttons here -->
+                <button>Curtir</button>
+                <button>Comentar</button>
+                <button>Compartilhar</button>
+                <button>Doar ao Criador</button>
+            </div>
+        </div>
+        <!-- Add more posts with larger images here -->
+    </div>
+</body>
+</html>
